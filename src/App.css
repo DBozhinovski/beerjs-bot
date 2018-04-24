@@ -1,0 +1,31 @@
+#root {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.App-logo {
+  height: 50px;
+  width: 50px;
+  padding: 4px;
+  background: #fff;
+  border-radius: 9999px;
+}
+
+.App-header {
+  height: 10vh;
+  background-color: #222;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  display: flex;
+}
+
+.App-title {
+  padding-left: 20px;
+  font-size: 1.8em;
+}
+
+main {
+  height: 90vh;
+}

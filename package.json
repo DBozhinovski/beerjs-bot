@@ -1,0 +1,28 @@
+{
+  "name": "beerjs-bot",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "compromise": "^11.6.0",
+    "lodash": "^4.17.5",
+    "mediawiki-js": "^0.1.0",
+    "moment": "^2.22.1",
+    "node-duckduckgo": "^1.0.5",
+    "ordinal-js": "^1.1.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4",
+    "react-typed": "^1.0.8",
+    "wikijs": "^4.7.0",
+    "wikipedia-tldr": "^1.0.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.70.0"
+  }
+}

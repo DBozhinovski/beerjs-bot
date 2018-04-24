@@ -1,0 +1,65 @@
+.chat-wrap {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background: #ddd;
+}
+
+.chat-history {
+  width: 100vw;
+  /* flex-grow: 14; */
+  height: 88%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: #fff;
+}
+
+.chat-history ul {
+  padding: 1vw;
+  width: 80vw;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.chat-history li {
+  /* display: inline-block; */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  clear: both;
+}
+
+.chat-history li b, .chat-history li time {
+  font-size: 14px;
+}
+
+.chat-history li p {
+  margin: 0;
+  padding: 0;
+}
+
+.chat-history li p:first-child {
+  margin-bottom: 10px;
+}
+
+.chat-history li.baloon-human {
+  background: rgba(180, 180, 180, .5);
+  color: #000;
+  margin-right: 3vw;
+  /* margin-left: 60vw; */
+  /* float: left; */
+  /* clear: both; */
+}
+
+.chat-history li.baloon-bot {
+  background: rgba(10, 10, 10, .8);
+  color: #fff;
+  margin-left: 3vw;
+  /* float: right; */
+  /* clear: both; */
+}
+
+.chat-history li time {
+  float: right;
+}
