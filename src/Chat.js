@@ -16,14 +16,29 @@ class Chat extends Component {
 
   }
 
+  async componentDidMount() {
+    const input = document.querySelector('.chatbox-input');
+    const reply = await Bot.getReply('OOPPEENN');
+
+    this.state.chatHistory.push({ owner: 'bot', mode: reply.mode, value: reply.value, time: moment().clone().format('HH:mm:ss') });
+
+    this.setState({
+      chatHistory: this.state.chatHistory,
+      enableInput: true,
+    });
+
+    input.focus();
+  }
+
   componentDidUpdate() {
     const histEl = document.querySelector('.chat-history');
     histEl.scrollTop = histEl.scrollHeight;
   }
 
   async onSubmit() {
-    const val = document.querySelector('.chatbox-input').value;
-    document.querySelector('.chatbox-input').value = '';
+    const input = document.querySelector('.chatbox-input');
+    const val = input.value;
+    input.value = '';
     
     this.state.chatHistory.push({ owner: 'human', mode: 'text', value: val, time: moment().clone().format('HH:mm:ss') });
 
@@ -40,6 +55,8 @@ class Chat extends Component {
       chatHistory: this.state.chatHistory,
       enableInput: true,
     });
+
+    input.focus();
 
     return false;
   }

@@ -49,7 +49,7 @@ const reply = async (input, context) => {
   } catch (e) {
     return {
       mode: 'text',
-      value: `Well, not even Wikipedia knows what you're on about. Maybe it's time to put that beer down now`
+      value: `Well, not even Wikipedia knows what you're on about. Maybe it's time to put that beer down now.`
     }
   }
 };

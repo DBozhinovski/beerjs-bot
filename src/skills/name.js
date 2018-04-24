@@ -17,6 +17,9 @@ const replies = [
 ]
 
 const reply = (input, context) => {
+  const timesMatched = get(context, 'name.matched', 0);
+  set(context, 'name.matched', timesMatched + 1);
+
   if (input.toLowerCase().includes('surely') || input.toLowerCase().includes('shirley')) {
     return {
       mode: 'img',

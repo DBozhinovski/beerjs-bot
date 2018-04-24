@@ -1,3 +1,4 @@
+import util from './util';
 import greet from './greet';
 import time from './time';
 import name from './name';
@@ -9,5 +10,6 @@ export default [
   time,
   greet,
   intro,
+  util,
   general
 ]

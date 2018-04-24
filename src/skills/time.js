@@ -16,7 +16,7 @@ const snark = [
   () => 'C\'mon, ask something different, I believe in you!',
   () => 'We can talk about other stuff, you know.',
   () => 'Well, obviously I can\'t stop you from asking, but it is getting a bit old now.',
-  (input, ctx) => `Also, fun fact - this is the ${ordinal.toOrdinal(ctx.time.matched)} time you're asking me that.`,  
+  (input, ctx) => `Also, fun fact - this is the ${ordinal.toOrdinal(ctx.time.matched)} time you're asking me that. 🤨`,  
 ]
 
 const reply = (input, context) => {

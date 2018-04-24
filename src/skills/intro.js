@@ -20,7 +20,7 @@ const reply = (input, context) => {
 
   return {
     mode: 'text',
-    value: 'okay.',
+    value: `Nice to meet you ${people[0]}`,
   }
 };
 
