@@ -1,5 +1,5 @@
 import nlp from 'compromise';
-import { set, get, random } from 'lodash';
+import { set, get } from 'lodash';
 
 const ID = 'intro';
 

@@ -2,7 +2,14 @@ const ID = 'weather';
 
 const lexicon = {};
 
-const matchPrhrases = [];
+const matchPhrases = [];
 
 const reply = (input, context) => {};
+
+export default {
+  ID,
+  lexicon,
+  matchPhrases,
+  reply,
+};
 
