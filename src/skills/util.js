@@ -14,7 +14,7 @@ const reply = (input, context) => {
   const timesMatched = get(context, 'intro.matched', 0);
   set(context, 'intro.matched', timesMatched + 1);
 
-  if (input === 'O P E N') {
+  if (input === 'OOPPEENN') {
     if (get(context, 'intro.name')) {
       return {
         mode: 'text',

@@ -3,6 +3,10 @@
   overflow: hidden;
 }
 
+.App {
+  height: 100%;
+}
+
 .App-logo {
   height: 50px;
   width: 50px;
@@ -12,7 +16,7 @@
 }
 
 .App-header {
-  height: 10vh;
+  height: 10%;
   background-color: #222;
   padding: 20px;
   align-items: center;
@@ -27,5 +31,5 @@
 }
 
 main {
-  height: 90vh;
+  height: 90%;
 }
