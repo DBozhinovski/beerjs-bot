@@ -27,7 +27,7 @@ const reply = async (input, context) => {
   const snarkChance = random(0, 1);
 
   try {
-    const direct = await wiki().page(query);
+    const direct = await wiki({ apiUrl: 'https://en.wikipedia.org/w/api.php' }).page(query);
     if (direct) {
       const summary = await direct.summary();
       return {
@@ -35,7 +35,7 @@ const reply = async (input, context) => {
         value: `${summary.split('.')[0]}. ${ snarkChance > .6 ? snark[random(0, snark.length - 1)](input, context) : '' }`
       };
     } else {
-      const search = await wiki().search(query);
+      const search = await wiki({ apiUrl: 'https://en.wikipedia.org/w/api.php' }).search(query);
       if (search.results.length > 0) {
         const page = await wiki().page(search.results[0]);
         const summary = await page.summary();
