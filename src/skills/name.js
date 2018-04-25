@@ -20,6 +20,8 @@ const reply = (input, context) => {
   const timesMatched = get(context, 'name.matched', 0);
   set(context, 'name.matched', timesMatched + 1);
 
+  localStorage.setItem('bjs-bot-context', JSON.stringify(context));
+
   if (input.toLowerCase().includes('surely') || input.toLowerCase().includes('shirley')) {
     return {
       mode: 'img',
