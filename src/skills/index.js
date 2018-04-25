@@ -4,6 +4,7 @@ import time from './time';
 import name from './name';
 import intro from './intro';
 import roll from './roll';
+import weather from './weather';
 import general from './general';
 
 export default [
@@ -13,5 +14,6 @@ export default [
   intro,
   roll,
   util,
+  weather,
   general
 ]

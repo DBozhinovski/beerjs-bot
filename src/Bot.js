@@ -6,7 +6,6 @@ const context = localStorage['bjs-bot-context'] ? JSON.parse(localStorage['bjs-b
 
 const getReply = async (input) => {
   const skillMatch = skills.find((s) => {
-    const rules = s.matchRules;
     const ruleMatch = s.matchRules.find(r => nlp(input).normalize().match(r).found);
 
     if (ruleMatch) {
@@ -22,7 +21,7 @@ const getReply = async (input) => {
     const reply = await skillMatch.reply(input, context);
     return reply;
   } else {
-    return { mode: 'text', value: 'Beep Boop!' };
+    return { mode: 'text', value: 'Beep Boop! (type help)' };
   }
 
 };
