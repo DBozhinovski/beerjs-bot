@@ -6,6 +6,7 @@ import intro from './intro';
 import roll from './roll';
 import weather from './weather';
 import general from './general';
+import dadjoke from './dadjoke';
 
 export default [
   name,
@@ -15,5 +16,6 @@ export default [
   roll,
   util,
   weather,
+  dadjoke,
   general
 ]
