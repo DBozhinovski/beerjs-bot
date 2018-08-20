@@ -9,7 +9,7 @@ const SK_LAT = 41.99735;
 const SK_LON = 21.428;
 
 const matchRules = [
-  'what is the weather outside'
+  '(what|tell|how) * (weather|outside)'
 ];
 
 
@@ -18,7 +18,7 @@ const reply = async (input, context) => {
 
   return {
     mode: 'text',
-    value: `It's ${res.degrees} currently outside.`
+    value: `It's ${res.temperature} degrees (the proper ones) outside, ${res.condition}.`
   };
 };
 
