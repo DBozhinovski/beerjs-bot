@@ -9,13 +9,16 @@ const SK_LAT = 41.99735;
 const SK_LON = 21.428;
 
 const matchRules = [
+  'what is the weather outside'
 ];
 
 
 const reply = async (input, context) => {
+  const res = await wm.getCurrent(SK_LAT, SK_LON);
+
   return {
     mode: 'text',
-    value: `I don't know how to do that (yet).`
+    value: `It's ${res.degrees} currently outside.`
   };
 };
 
